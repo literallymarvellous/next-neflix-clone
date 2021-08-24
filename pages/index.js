@@ -17,19 +17,8 @@ export default function Home() {
     show: false,
     toggle: false,
   });
-  const toggle = useRef();
 
   const handleClick = (e) => {
-    if (faq.toggle === false && faq.show === false) {
-      setFaq({
-        toggle: true,
-        show: true,
-      });
-    } else if (faq === true) {
-      setFaq(false);
-    }
-    // setFaq(!faq);
-    console.log(faq);
     console.log(e);
   };
 
